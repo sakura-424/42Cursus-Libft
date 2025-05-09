@@ -6,7 +6,7 @@
 /*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 16:43:15 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/05 06:40:50 by skatsuya         ###   ########.fr       */
+/*   Updated: 2025/05/06 19:56:55 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,6 @@ char	**ft_split(char const *s, char c)
 		}
 		i++;
 	}
-	result[i] = 0;
+	result[i] = NULL;
 	return (result);
 }

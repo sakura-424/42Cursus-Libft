@@ -6,7 +6,7 @@
 /*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 18:35:24 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/05 06:50:42 by skatsuya         ###   ########.fr       */
+/*   Updated: 2025/05/06 19:37:31 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	str1 = (const unsigned char *)s1;
 	str2 = (const unsigned char *)s2;
-	if (n == 0)
-		return (0);
 	while (n--)
 	{
 		if (*str1 != *str2)
