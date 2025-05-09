@@ -6,7 +6,7 @@
 /*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 06:38:23 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/07 07:12:26 by skatsuya         ###   ########.fr       */
+/*   Updated: 2025/05/09 18:57:30 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list *current;
+	t_list	*current;
 
 	if (!lst || !f)
 		return ;
