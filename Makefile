@@ -6,7 +6,7 @@
 #    By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/29 18:41:59 by skatsuya          #+#    #+#              #
-#    Updated: 2025/05/04 23:17:38 by skatsuya         ###   ########.fr        #
+#    Updated: 2025/05/11 13:51:59 by skatsuya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,9 +26,22 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
        ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
        ft_putendl_fd.c ft_putnbr_fd.c
 
+BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
+             ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
+             ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
 OBJS = $(SRCS:.c=.o)
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+
+ifeq ($(filter bonus,$(MAKECMDGOALS)), bonus)
+    SRCS += $(BONUS)
+    OBJS += $(BONUS_OBJS)
+
+endif
 
 all: $(NAME)
+
+bonus: $(NAME)
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
@@ -37,11 +50,11 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus

@@ -6,7 +6,7 @@
 /*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 11:56:58 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/04/29 19:13:59 by skatsuya         ###   ########.fr       */
+/*   Updated: 2025/05/09 22:54:55 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	little_len;
 
 	i = 0;
-	if (big == NULL || little == NULL)
-		return (NULL);
 	if (*little == '\0')
 		return ((char *)big);
 	little_len = ft_strlen(little);

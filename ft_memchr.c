@@ -6,7 +6,7 @@
 /*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:53:21 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/05 06:48:58 by skatsuya         ###   ########.fr       */
+/*   Updated: 2025/05/09 20:22:19 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n--)
 	{
 		if (*ptr == byte)
-			return (ptr);
+			return ((void *)ptr);
 		ptr++;
 	}
 	return (NULL);

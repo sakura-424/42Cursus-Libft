@@ -6,7 +6,7 @@
 /*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 06:47:23 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/09 19:35:55 by skatsuya         ###   ########.fr       */
+/*   Updated: 2025/05/09 22:50:21 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new_node = malloc(sizeof(t_list));
 		if (!new_node)
 		{
+			if (new_content)
+				del(new_content);
 			ft_lstclear(&new_lst, del);
 			return (NULL);
 		}
