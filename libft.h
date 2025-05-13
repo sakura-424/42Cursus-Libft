@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
+/*   By:  skatsuya@student.42tokyo.jp <skatsuya>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 08:33:03 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/09 22:19:53 by skatsuya         ###   ########.fr       */
+/*   Updated: 2025/05/13 00:22:31 by  skatsuya@s      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <bsd/string.h>
+# include <string.h>
 # include <limits.h>
 # include <stdint.h>
 # include <stdio.h>
