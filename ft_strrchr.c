@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By:  skatsuya@student.42tokyo.jp <skatsuya>    +#+  +:+       +#+        */
+/*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 11:18:44 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/14 02:14:47 by  skatsuya@s      ###   ########.fr       */
+/*   Updated: 2025/05/05 06:35:28 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *str, int c)
 {
 	const char		*last_pos = NULL;
-	char	ch;
+	unsigned char	ch;
 
 	ch = (char)c;
 	while (*str != '\0')

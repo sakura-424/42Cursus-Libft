@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By:  skatsuya@student.42tokyo.jp <skatsuya>    +#+  +:+       +#+         #
+#    By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/29 18:41:59 by skatsuya          #+#    #+#              #
-#    Updated: 2025/05/14 02:13:36 by  skatsuya@s      ###   ########.fr        #
+#    Updated: 2025/05/13 19:19:57 by skatsuya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

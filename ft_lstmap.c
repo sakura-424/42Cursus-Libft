@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By:  skatsuya@student.42tokyo.jp <skatsuya>    +#+  +:+       +#+        */
+/*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 06:47:23 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/14 02:16:13 by  skatsuya@s      ###   ########.fr       */
+/*   Updated: 2025/05/09 22:50:21 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	void	*new_content;
 
 	new_lst = NULL;
-	if (!f || !del)
+	if (!lst || !f || !del)
 		return (NULL);
 	while (lst != NULL)
 	{

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By:  skatsuya@student.42tokyo.jp <skatsuya>    +#+  +:+       +#+        */
+/*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 06:38:23 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/14 02:16:48 by  skatsuya@s      ###   ########.fr       */
+/*   Updated: 2025/05/09 21:47:58 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*current;
 
-	if (!f)
+	if (!lst || !f)
 		return ;
 	current = lst;
 	while (current != NULL)
