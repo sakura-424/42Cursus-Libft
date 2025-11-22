@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skatsuya < skatsuya@student.42tokyo.jp>    +#+  +:+       +#+        */
+/*   By: skatsuya <skatsuya@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 09:31:28 by skatsuya          #+#    #+#             */
-/*   Updated: 2025/05/02 22:46:22 by skatsuya         ###   ########.fr       */
+/*   Updated: 2025/11/23 06:24:50 by skatsuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 	i = 0;
 	if (n == 0)
-	{
 		return (0);
-	}
 	while (i < n && *s1 == *s2 && (*s1 != '\0') && (*s2 != '\0'))
 	{
 		s1++;
@@ -30,9 +28,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	}
 	if (i == n)
-	{
 		return (0);
-	}
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
 
